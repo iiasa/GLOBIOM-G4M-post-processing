@@ -1,2 +1,3 @@
 import Pluto
-Pluto.run(host="0.0.0.0")
+cd("/processing/notebooks")
+Pluto.run(host="0.0.0.0", notebook="Plots.jl")
