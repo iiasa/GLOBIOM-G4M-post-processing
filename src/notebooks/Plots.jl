@@ -13,7 +13,15 @@ using Markdown
 using InteractiveUtils
 
 # ╔═╡ 5e611449-c239-4547-9d13-5db33a081e58
-using Plots
+begin
+    import Pkg
+    # activate the shared project environment
+    Pkg.activate(Base.current_project())
+    # instantiate, i.e. make sure that all packages are downloaded
+    Pkg.instantiate()
+
+    using Plots
+end
 
 # ╔═╡ 7b93882c-9ad8-11ea-0288-0941e163f9d5
 md"""

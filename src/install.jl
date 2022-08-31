@@ -1,3 +1,5 @@
 using Pkg
+pkg"activate ."
 pkg"add Pluto"
-pkg"precompile"
+pkg"add Plots"
+pkg"precompile Pluto, Plots"
