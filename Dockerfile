@@ -1,4 +1,4 @@
-FROM julia:1.8.0-alpine
+FROM julia:1.8-bullseye
 WORKDIR /processing
 COPY src/install.jl .
 RUN julia install.jl
